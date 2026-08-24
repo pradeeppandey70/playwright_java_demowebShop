@@ -1,1 +1,4 @@
+base\BaseTest.class
+driver\PlaywrightManager.class
 utils\ConfigReader.class
+browserfactory\BrowserFactory.class
