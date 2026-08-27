@@ -5,7 +5,7 @@ import com.microsoft.playwright.BrowserContext;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.Playwright;
 
-import browserfactory.BrowserFactory;
+import factory.BrowserFactory;
 
 public class PlaywrightManager {
 	

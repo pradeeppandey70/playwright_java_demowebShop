@@ -3,12 +3,16 @@ package base;
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
 
+import factory.LocatorFactory;
+
 public abstract class BasePage {
 	
 	protected final Page page;
+	protected final LocatorFactory locator;
 	
 	protected BasePage(Page page) {
 		this.page = page;
+		this.locator = new LocatorFactory(page);
 	}
 	
 	public void navigate(String url) {
@@ -55,6 +59,6 @@ public abstract class BasePage {
 		locator.press(key);
 	}
 	
-	 
+	
 
 }

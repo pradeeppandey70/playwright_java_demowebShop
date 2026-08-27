@@ -1,4 +1,4 @@
-package browserfactory;
+package factory;
 
 import com.microsoft.playwright.Browser;
 import com.microsoft.playwright.BrowserType;
