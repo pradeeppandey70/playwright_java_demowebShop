@@ -14,9 +14,17 @@ public class Loginpage extends BasePage{
 	//Locator pw = locator.label("login");
 	
 	
-	public void clickLogin() {
+	public void enterUseremail(String email) {
 		
 	}
+	
+public void enterPassword(String password) {
+		
+	}
+
+public void clickLogin() {
+	
+}
 	
 
 }

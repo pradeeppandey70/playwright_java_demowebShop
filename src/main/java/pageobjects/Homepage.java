@@ -7,7 +7,7 @@ import base.BasePage;
 
 public class Homepage extends BasePage{
 	
-	protected Homepage(Page page) {
+	public Homepage(Page page) {
 		super(page);
 		// TODO Auto-generated constructor stub
 	}
