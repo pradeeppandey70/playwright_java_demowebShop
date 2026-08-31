@@ -12,7 +12,7 @@ public class Homepage extends BasePage{
 		// TODO Auto-generated constructor stub
 	}
 	
-	Locator pw = locator.label("login");
+	Locator pw = locator.text("Log in");
 	
 	
 	public Loginpage clickLogin() {

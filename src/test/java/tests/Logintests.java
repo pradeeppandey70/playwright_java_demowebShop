@@ -8,12 +8,12 @@ import pageobjects.Loginpage;
 
 public class Logintests extends BaseTest{
 	@Test
-	public void loginWithValidCredentials(String email, String password) {
+	public void loginWithValidCredentials() {
 		Homepage home = new Homepage(page);
 		Loginpage login = home.clickLogin();
-		login.enterUseremail(email);
-		login.enterPassword(password);
-		login.clickLogin();
+		login.enterUseremail("email");
+		login.enterPassword("password");
+		login.clickLoginBTN();
 		
 	}
 

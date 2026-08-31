@@ -30,6 +30,11 @@
 			<version>7.12.0</version>
 			<scope></scope>
 		</dependency>
+		<dependency>
+			<groupId>pradeep-automation</groupId>
+			<artifactId>RestfulBookerAPI</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 	</dependencies>
 
 	<build>

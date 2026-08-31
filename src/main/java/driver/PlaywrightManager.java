@@ -17,7 +17,7 @@ public class PlaywrightManager {
 	public static void initialize() {
 		Playwright playwright = Playwright.create();
 		Browser browser = BrowserFactory.createBrowser(playwright);
-		BrowserContext context = browser.newContext();
+		BrowserContext context = browser.newContext(new Browser.NewContextOptions().setViewportSize(null));
 		Page page = context.newPage();
 		
 		playwrightThreadlocal.set(playwright);
