@@ -20,7 +20,7 @@ public class BrowserFactory {
 			browsername = ConfigReader.getConfig("browsername");
 		}
 		
-		BrowserType.LaunchOptions options = new BrowserType.LaunchOptions().setHeadless(false).setSlowMo(100).setArgs(java.util.List.of("--start-maximized"));
+		BrowserType.LaunchOptions options = new BrowserType.LaunchOptions().setHeadless(false).setSlowMo(1000).setArgs(java.util.List.of("--start-maximized"));
 		
 		return switch(browsername.toLowerCase()) {
 		case "chromium", "chrome", "edge"->

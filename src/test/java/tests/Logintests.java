@@ -1,6 +1,7 @@
 package tests;
 
 import org.testng.annotations.Test;
+import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;
 
 import base.BaseTest;
 import pageobjects.Homepage;
@@ -11,9 +12,10 @@ public class Logintests extends BaseTest{
 	public void loginWithValidCredentials() {
 		Homepage home = new Homepage(page);
 		Loginpage login = home.clickLogin();
-		login.enterUseremail("email");
-		login.enterPassword("password");
+		login.enterUseremail("pradeeptest1@yopmail.com");
+		login.enterPassword("Aa@12345");
 		login.clickLoginBTN();
+		assertThat(home.getuserEmail()).containsText("pradeeptest1@yopmail.com");
 		
 	}
 

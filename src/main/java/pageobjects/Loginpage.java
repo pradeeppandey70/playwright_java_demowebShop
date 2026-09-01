@@ -17,17 +17,21 @@ public class Loginpage extends BasePage {
 	private Locator passwordField = locator.label("Password:");
 	private Locator rememberMeCheckbox = locator.label("Remember me?");
 	private Locator forgotpasswordLink = locator.text("Forgot password?");
-	private Locator loginBTN = locator.label("Remember me?");
+	private Locator loginBTN = locator.css("input.login-button");
+	
 
 	public void enterUseremail(String email) {
+		fill(loginField, email);
 
 	}
 
 	public void enterPassword(String password) {
-
+		fill(passwordField, password);
 	}
 
-	public void clickLoginBTN() {
+	public Homepage clickLoginBTN() {
+		click(loginBTN);
+		return new Homepage(page);
 
 	}
 

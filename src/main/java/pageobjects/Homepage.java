@@ -12,13 +12,20 @@ public class Homepage extends BasePage{
 		// TODO Auto-generated constructor stub
 	}
 	
-	Locator pw = locator.text("Log in");
-	
+	private Locator loginLink = locator.text("Log in");
+	private Locator userEmailDisplay = locator.css("a.account").first();
 	
 	public Loginpage clickLogin() {
-		click(pw);
+		click(loginLink);
 		return new Loginpage(page);
 	}
+	
+	public Locator getuserEmail() {
+		return this.userEmailDisplay;
+	}
+	
+	
+	
 	
 
 }
